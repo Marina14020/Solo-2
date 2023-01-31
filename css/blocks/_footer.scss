@@ -1,0 +1,23 @@
+.footer{
+
+    &__address{
+        font-size: rem(18px);
+        color: $ColorTitle;
+        margin: rem(20px) rem(42px) rem(86px);
+    }
+
+    &__contacts{
+        display: flex;
+        justify-content: end;
+        margin-right: rem(30px);
+    }
+
+    &__social{
+        margin-right: rem(10px);
+
+        &:last-child{
+            margin-right: rem(0px);
+        }
+    }
+    
+}

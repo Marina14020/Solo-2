@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+    align-items: flex-start; //при переносе на др стр
+}
+
+.phone-number.header__phone-number{   //увеличили значение селектора-2класса
+    @include tablets{
+        display: none;
+    }
+}
+
+.phone-number{
+    font-size: rem(18px);
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Play';
+    display: flex;
+    align-items: center;
+    
+    &__icon{
+        flex-shrink: 0;
+        
+        &-elem{
+            width: rem(14px);
+            height: rem(14px);
+            margin-right: rem(7px);
+        }
+    }
+
+    &__text{
+        white-space: nowrap;
+    }
+}
